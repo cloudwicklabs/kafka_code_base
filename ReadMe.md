@@ -35,7 +35,15 @@ This repository contains code examples of Kafka consumer's, producer's using Sca
         localhost:2181 newgroup newtopic
 
 2. Running a multi-threaded consumer
- 
-        
 
+        java -cp target/scala-2.11/ScalaKafkaExamples-assembly-1.0.jar \
+        com.cloudwick.kafka.java.consumer.examples.MTConsumer \
+        localhost:2181 newgroup newtopic 4
+
+    You might want to re-run the producer to have some data before running the consumer again.
+
+3. You can check to validate the consumer offset and log now to validate if the consumer's have properly read the date       
+
+        bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --zookeeper localhost:2181 \ 
+        --topic newtopic --group newgroup
         
