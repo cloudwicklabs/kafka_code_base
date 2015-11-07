@@ -7,6 +7,11 @@ import kafka.producer.ProducerConfig;
 import java.util.Date;
 import java.util.Properties;
 
+/**
+ * SimpleProducer is an example of how to implement Producer in Kafka, this example does not handles
+ * partitioning of messages. Instead it will generate a random message each time and forwards it to
+ * Kafka Broker's.
+ */
 public class SimpleProducer {
     private static Producer<String, String> producer;
 

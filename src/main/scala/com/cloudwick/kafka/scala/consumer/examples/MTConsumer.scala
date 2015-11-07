@@ -5,7 +5,9 @@ import java.util.concurrent.Executors
 
 import kafka.consumer.{KafkaStream, Consumer, ConsumerConfig}
 
-
+/**
+ * Simple multi-threaded Kafka Consumer implementation using Consumer HighLevel API
+ */
 object MTConsumer extends App {
   val props = new Properties()
   props.put("zookeeper.connect", "localhost:2181")

@@ -3,6 +3,10 @@ package com.cloudwick.kafka.java.consumer.examples;
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
 
+/**
+ * MessageHandler will take an individual Kafka Stream and consumes the messages from that Stream
+ * and prints to the console.
+ */
 public class MessageHandler implements Runnable {
     private KafkaStream<byte[], byte[]> stream;
 

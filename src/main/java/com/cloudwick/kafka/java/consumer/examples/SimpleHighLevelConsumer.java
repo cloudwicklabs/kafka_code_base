@@ -10,6 +10,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+/**
+ * This class is a simple example of how to implement a Consumer which prints the values from Kafka
+ * using Consumer HighLevel API
+ */
 public class SimpleHighLevelConsumer {
     private final ConsumerConnector consumer;
     private final String topic;

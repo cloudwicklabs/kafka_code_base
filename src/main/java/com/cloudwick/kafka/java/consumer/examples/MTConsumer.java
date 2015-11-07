@@ -11,6 +11,9 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * MTConsumer is an example of how to implement multi-threaded Consumer using Consumer HighLevel API
+ */
 public class MTConsumer {
     private ExecutorService executor;
     private final ConsumerConnector consumer;
